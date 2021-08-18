@@ -6,12 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Chama a tag 'style' que aplicará os atributos definidos, p. ex,Z para <p> em todos os parágrafos
+    <style>
+        #p1{
+            font-size: 20px;
+        }
+        .p1{
+            font-size: 40px;
+        }
+    </style>-->
 </head>
+
 
 <body>
     <!-- <ul> unordered list | <ol> ordered list -->
-        <!--<li> list item -->
-    <ul> 
+    <!--<li> list item -->
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
             <!--target="_blank" - abre o link em outra guia -->
@@ -22,27 +33,67 @@
     </ul>
 
     <h1>Sobre o Juan...</h1>
-    <p>
-        Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Interessantiss
-        quisso pudia ce receita de bolis, mais bolis eu num gostis. Si num tem leite então bota uma pinga aí cumpadi!
-        Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
-    </p>
+    <!-- ID => delimita apenas um elemento, é individual 
+    <p id="p1">-->
+    <div class="container">
+        <div>
+            <img class="brdr50 wh" src="./img/atlas.jpg"
+                alt="imagem de estatua do titã atlas segurando o globo terrestre nas costas" height="250">
+        </div>
+        <div class="pddng30">
+            <p class="justify">
+                Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça.
+                Interessantiss
+                quisso pudia ce receita de bolis, mais bolis eu num gostis. Si num tem leite então bota uma pinga aí
+                cumpadi!
+                Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+            </p>
+            <!-- CLASS => pode ser usada para vários elementos 
+        <p class="p1">-->
+            <p class="justify">
+                Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça.
+                Interessantiss
+                quisso pudia ce receita de bolis, mais bolis eu num gostis. Si num tem leite então bota uma pinga aí
+                cumpadi!
+                Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+            </p>
+        </div>
 
-    <img src="./img/atlas.jpg" alt="imagem de estatua do titã atlas segurando o globo terrestre nas costas"
-        height="500"> <!--  atributo alt facilita para descrição "para cego ver"   -->
+        <!--  atributo alt facilita para descrição "para cego ver"   -->
+    </div>
 
     <p>
         Curte um jazz aí...
     </p>
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DSGyEsJ17cI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
 
-    <iframe 
-        width="560"
-        height="315" 
-        src="https://www.youtube.com/embed/DSGyEsJ17cI" title="YouTube video player"
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+            <a href="https://www.facebook.com/">
+                <img class="tm-social pddng30" src="./img/facebook.png" alt="Logo do facebook">
+            </a>
+
+            <a href="https://www.instagram.com/">
+                <img class="tm-social pddng30" src="./img/instagram.png" alt="Logo do instagram">
+            </a>
+
+            <a href="https://www.linkedin.com/">
+                <img class="tm-social pddng30" src="./img/linkedin.png" alt="Logo do linkedin">
+            </a>
+
+        </div>
+        <p class="center">
+            Todos os direitos reservados: Juan Sapiezcinski &copy
+        </p>
+    </footer>
+
 </body>
 
 </html>
